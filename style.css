@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.container{
+    max-width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7rem 10rem;
+    background-color: rgb(1, 1, 26);
+    color: rgb(229, 202, 167);
+}
+h1{
+    text-align: center;
+    background-color: wheat;
+    display: block;
+    width: 300px;
+   color:  rgb(1, 1, 26);
+}
+
+h2{
+    margin-top: 1rem;
+  
+}
+
+button{
+    padding: 3rem;
+    border: none;
+    outline: none;
+    margin-top: 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.btn{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#paper{
+    background: url(images/paper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:blue;
+}
+
+#scissors{
+    background: url(images/scissors.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:antiquewhite;
+    
+}
+
+#rock{
+    background: url(images/rock.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: coral;
+}
+
+@media (max-width: 625px){
+    .container{
+        padding: 5.5rem 7.5rem;
+    
+    }
+    button{
+        padding: 2.4rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 570px){
+    .container{
+        padding: 5rem 7rem;
+    
+    }
+    button{
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 420px){
+    .container{
+        padding: 4rem 6rem;
+    
+    }
+
+    h2{
+        margin-top: 0.75rem;
+        font-size: 1.2rem;
+      
+    }
+
+    button{
+        padding: 1.6rem;
+        font-size: 1rem;
+    }
+
+}
